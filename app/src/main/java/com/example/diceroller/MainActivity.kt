@@ -1,10 +1,10 @@
 package com.example.diceroller
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
+        // Create dice object with 6 sides from Dice class
         val dice = Dice(6)
         val diceRoll = dice.roll()
         val resultTextView: TextView = findViewById(R.id.text_view)
