@@ -2,6 +2,7 @@ package com.example.diceroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -24,12 +25,12 @@ class MainActivity : AppCompatActivity() {
         // Create dice object with 6 sides from Dice class
         val dice = Dice(6)
         val diceRoll = dice.roll()
-        val resultTextView: TextView = findViewById(R.id.text_view)
-        resultTextView.text = diceRoll.toString()
+        val diceImage: ImageView = findViewById(R.id.image_view)
+        diceImage.setImageResource(R.drawable.dice_2)
 
         val diceRoll2 = dice.roll()
-        val resultTextView2: TextView = findViewById(R.id.text_view_2)
-        resultTextView2.text = diceRoll2.toString()
+        val diceImage2: ImageView = findViewById(R.id.image_view_2)
+        diceImage2.setImageResource(R.drawable.dice_3)
     }
 }
 
