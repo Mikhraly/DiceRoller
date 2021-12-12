@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
             rollDice()
         }
+
+        rollDice()
     }
 
     private fun rollDice() {
